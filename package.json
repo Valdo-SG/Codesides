@@ -1,0 +1,58 @@
+{
+  "name": "control-finanzas",
+  "version": "1.0.0",
+  "description": "Aplicación de escritorio para el control de finanzas personales",
+  "main": "dist-electron/main.js",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc -p tsconfig.json && vite build",
+    "preview": "vite preview",
+    "dist": "npm run build && electron-builder"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Valdo-SG/Codesides.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Valdo-SG/Codesides/issues"
+  },
+  "homepage": "https://github.com/Valdo-SG/Codesides#readme",
+  "build": {
+    "appId": "com.valdo.controlfinanzas",
+    "productName": "Control de Finanzas",
+    "files": [
+      "dist",
+      "dist-electron"
+    ],
+    "directories": {
+      "output": "release"
+    }
+  },
+  "devDependencies": {
+    "@types/better-sqlite3": "^7.6.13",
+    "@types/node": "^26.1.0",
+    "@types/react": "^19.2.17",
+    "@types/react-dom": "^19.2.3",
+    "@types/uuid": "^10.0.0",
+    "@vitejs/plugin-react": "^6.0.3",
+    "electron": "^43.1.0",
+    "electron-builder": "^26.15.3",
+    "typescript": "^6.0.3",
+    "vite": "^8.1.3",
+    "vite-plugin-electron": "^1.1.0",
+    "vite-plugin-electron-renderer": "^1.0.0"
+  },
+  "dependencies": {
+    "better-sqlite3": "^12.11.1",
+    "date-fns": "^4.4.0",
+    "react": "^19.2.7",
+    "react-dom": "^19.2.7",
+    "recharts": "^3.9.2",
+    "uuid": "^14.0.1"
+  }
+}
