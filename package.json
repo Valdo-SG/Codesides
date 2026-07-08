@@ -4,7 +4,6 @@
   "description": "Aplicación de escritorio para el control de finanzas personales",
   "main": "dist-electron/main.js",
   "private": true,
-  "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "tsc -p tsconfig.json && vite build",
